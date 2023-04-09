@@ -67,7 +67,7 @@ class Kata:
     def create_new_file(self):
         if not os.path.isfile(self.new_file['name']):
             with open(f"{self.new_file['name']}", 'w', encoding='utf-8') as f:
-                f.write(f"#{self.new_file['url']}\n\n")
+                f.write(f"# {self.new_file['url']}\n\n")
                 f.write(f"{self.create_sep()}\n")
                 f.writelines(f"{self.new_file['description']}\n")
                 f.write(f"{self.create_sep()}\n\n\n")
